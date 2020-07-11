@@ -1,9 +1,9 @@
-// const express = require('express');
+const express = require('express');
 const Twit = require('twit');
 const spintax = require('mel-spintax');
 const fetch = require('node-fetch');
 
-// const app = express();
+const app = express();
 
 // Configure the twitter access API to Twit
 const T = new Twit({
@@ -18,7 +18,7 @@ let last_tweet_date = '2020-07-09T16:20:00';
 
 // Get the last post date via Wordpress Rest API
 async function check_last_post() {
-    let today = new Date();
+    let today = new Date('2020-07-10T16:20:00');
     console.log(`Starting bot ${today}`);
 
     // Check if the bot already have tweeted today
@@ -69,5 +69,14 @@ ahnegao.com.br
 
 
 
-// Call the function to check last post
-check_last_post()
+
+
+app.get('/', function(req, res){
+    // Call the function to check last post
+    check_last_post();
+    res.send('Joe já postou? bot v1');
+});
+
+let port = process.env.PORT || 8000;
+app.listen(port);
+console.log('server started ' + port);
