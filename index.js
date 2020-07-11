@@ -41,6 +41,8 @@ async function check_last_post() {
 }
 
 async function tweet(last_post_date) {
+    // Change the date of the last tweet
+    last_tweet_date = last_post_date;
     // Format the post publication hour to a 24h format. Ex: 16:20
     let options = {
         hour: 'numeric', minute: 'numeric',
