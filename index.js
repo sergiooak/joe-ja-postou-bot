@@ -4,14 +4,14 @@ const fetch = require('node-fetch');
 
 // Configure the twitter access API to Twit
 const T = new Twit({
-    consumer_key:         process.env.C_KEY,
-    consumer_secret:      process.env.C_SECRET,
-    access_token:         process.env.A_TOKEN,
-    access_token_secret:  process.env.A_SECRETY,
+    consumer_key:         'Lt3Uq0zmWOZU0qkBaMtsMXZIj',
+    consumer_secret:      'pIGX88MVtMoNxUUk59pYAbDIm84whnZuubznEcKscQpGwmoZX9',
+    access_token:         '1281971853339369477-uOkc5tRldmbKY1jKPZRmRRKfUmN54M',
+    access_token_secret:  'mMOYiFtfG4vsCLu2P84wkAn2ultAJ6M6Gbl9D7JxOSlgx',
 })
 
 // Save the day to the last tweet
-let last_tweet_date = '2020-07-10T16:20:00';
+let last_tweet_date = '2020-07-09T16:20:00';
 
 // Get the last post date via Wordpress Rest API
 async function check_last_post() {
