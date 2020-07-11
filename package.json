@@ -1,0 +1,18 @@
+{
+  "name": "joe-ja-postou",
+  "version": "1.0.0",
+  "description": "Simple node bot that posts on twitter",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./",
+    "start": "npm i && node ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mel-spintax": "^1.0.4",
+    "node-fetch": "^2.6.0",
+    "twit": "^2.2.11"
+  }
+}
