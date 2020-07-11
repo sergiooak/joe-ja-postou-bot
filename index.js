@@ -18,7 +18,7 @@ let last_tweet_date = '2020-07-09T16:20:00';
 
 // Get the last post date via Wordpress Rest API
 async function check_last_post() {
-    let today = new Date('2020-07-10T16:20:00');
+    let today = new Date();
     console.log(`Starting bot ${today}`);
 
     // Check if the bot already have tweeted today
@@ -65,7 +65,7 @@ ahnegao.com.br
 
     // Post the generated tweet
     T.post('statuses/update', { status: status }, function(err, data) {
-        console.log('Successfull tweeted!');
+        console.log(`Successfull tweeted! ${last_tweet_date}`);
     })
 }
 
