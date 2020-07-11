@@ -4,8 +4,8 @@
   "description": "Simple node bot that posts on twitter",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./",
-    "start": "npm i && node ./",
+    "dev": "nodemon index",
+    "start": "npm install && node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
