@@ -1,6 +1,9 @@
+// const express = require('express');
 const Twit = require('twit');
 const spintax = require('mel-spintax');
 const fetch = require('node-fetch');
+
+// const app = express();
 
 // Configure the twitter access API to Twit
 const T = new Twit({
@@ -67,4 +70,4 @@ ahnegao.com.br
 
 
 // Call the function to check last post
-// check_last_post()
+check_last_post()
