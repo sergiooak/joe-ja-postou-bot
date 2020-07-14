@@ -7,10 +7,10 @@ const app = express();
 
 // Configure the twitter access API to Twit
 const T = new Twit({
-    consumer_key:         'Lt3Uq0zmWOZU0qkBaMtsMXZIj',
-    consumer_secret:      'pIGX88MVtMoNxUUk59pYAbDIm84whnZuubznEcKscQpGwmoZX9',
-    access_token:         '1281971853339369477-uOkc5tRldmbKY1jKPZRmRRKfUmN54M',
-    access_token_secret:  'mMOYiFtfG4vsCLu2P84wkAn2ultAJ6M6Gbl9D7JxOSlgx',
+    consumer_key:         '...',
+    consumer_secret:      '...',
+    access_token:         '...',
+    access_token_secret:  '...',
 })
 
 // Save the day to the last tweet
@@ -69,10 +69,7 @@ ahnegao.com.br
     })
 }
 
-
-
-
-
+// I've used Express to be able to setup a CRON job (* * * * *)
 app.get('/', function(req, res){
     // Call the function to check last post
     check_last_post();
